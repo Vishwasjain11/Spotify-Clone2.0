@@ -7,7 +7,7 @@ import { albumsData } from "../assets/assets";
 const Display =()=>{
 
     const displayRef = useRef();
-    const location =useLocation();
+    const location = useLocation();
     const isAlbum = location.pathname.includes("album");
     const albumId = isAlbum ? location.pathname.slice(-1) : "";
     const bgColor = albumsData[Number(albumId)].bgColor;

@@ -3,7 +3,9 @@ import Navbar from "./navBar";
 import { albumsData } from "../assets/assets";
 import AlbumItem from "./AlbumItem";
 import { songsData } from "../assets/assets";
-import SongItem from "./SongItem";
+import SongItem2 from "./SongItem2";
+
+
 
 const DisplayHome = ()=>{
     return(
@@ -20,7 +22,7 @@ const DisplayHome = ()=>{
             <div className="mb-4">
                 <h1 className="my-5 font-bold text-2xl"> Today's biggest hits</h1>
                 <div className="flex overflow-auto">
-                    {songsData.map((item,index)=>(<SongItem key={index} name={item.name} desc={item.desc}
+                    {songsData.map((item,index)=>(<SongItem2 key={index} name={item.name} desc={item.desc}
                     image={item.image} id={item.id} />))}
                 </div>
                 
